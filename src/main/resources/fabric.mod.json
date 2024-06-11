@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "ssna",
+  "version": "${version}",
+  "name": "Super Simple Normal API",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/marco/Super Simple Normal API"
+  },
+  "license": "MIT",
+  "icon": "assets/ssna/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.restonic4.ssna.client.SuperSimpleNormalAPIClient"
+    ],
+    "main": [
+      "me.restonic4.ssna.SuperSimpleNormalAPI"
+    ]
+  },
+  "mixins": [
+    "ssna.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
